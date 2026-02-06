@@ -268,14 +268,21 @@ document.querySelector('#submit').addEventListener('click', () => {
 // Filter functionality
 function filterTodos() {
   const keyword = filterKeyword.value.toLowerCase();
-  const dateFilter = parseDate(filterDate.value);
+  const dateFilter = filterHiddenDate.value;
   const priorityFilter = filterPriority.value;
   const todos = document.querySelectorAll('.todo-item');
 
   todos.forEach(todo => {
     const text = todo.querySelector('.text').value.toLowerCase();
     const dateEl = todo.querySelector('.date');
-    const todoDate = dateEl ? dateEl.textContent.replace('Due: ', '').split('/').reverse().join('-') : ''; // Convert DD/MM/YYYY to YYYY-MM-DD for comparison
+    let todoDate = '';
+    if (dateEl) {
+      const dateParts = dateEl.textContent.replace('Due: ', '').split('/');
+      const day = dateParts[0].padStart(2, '0');
+      const month = dateParts[1].padStart(2, '0');
+      const year = dateParts[2];
+      todoDate = `${year}-${month}-${day}`;
+    }
     const priorityEl = todo.querySelector('.priority');
     const todoPriority = priorityEl ? priorityEl.textContent : '';
 
@@ -286,9 +293,11 @@ function filterTodos() {
       show = false;
     }
 
-    // Filter by date (show if todo date >= filter date)
-    if (dateFilter && todoDate && todoDate < dateFilter) {
-      show = false;
+    // Filter by date (show only if todo date exactly matches filter date)
+    if (dateFilter) {
+      if (!todoDate || todoDate !== dateFilter) {
+        show = false;
+      }
     }
 
     // Filter by priority
@@ -302,6 +311,11 @@ function filterTodos() {
 
 // Event listeners for filters
 filterKeyword.addEventListener('input', filterTodos);
+filterDate.addEventListener('change', () => {
+  const parsed = parseDate(filterDate.value);
+  filterHiddenDate.value = parsed;
+  filterTodos();
+});
 filterHiddenDate.addEventListener('change', filterTodos);
 filterPriority.addEventListener('change', filterTodos);
 clearFiltersBtn.addEventListener('click', () => {

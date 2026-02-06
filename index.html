@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activitas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/d5f22ee4f8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="ta-container">
+      <div class="heading">
+        <h1>Activitas App</h1>
+      </div>
+      <div class="ta-wrapper">
+        <div class="input-wrapper">
+          <div class="input-group">
+            <input type="text" id="todo-input" placeholder=" ">
+            <label for="todo-input">Masukkan Tugas</label>
+            <i class="fa-solid fa-list-check"></i>
+          </div>
+          <div class="input-group">
+            <input type="text" id="todo-date" placeholder="dd/mm/yyyy">
+            <input type="date" id="hidden-date" style="display: none;">
+            <label for="todo-date">Pilih Tanggal (dd/mm/yyyy)</label>
+            <i class="fa-solid fa-calendar-days"></i>
+          </div>
+          <div class="input-group">
+            <select id="todo-priority">
+              <option value="" disabled selected></option>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+            <label for="todo-priority">Prioritas</label>
+            <i class="fa-solid fa-exclamation-triangle"></i>
+          </div>
+          <div class="input-group">
+            <textarea id="todo-description" placeholder=" "></textarea>
+            <label for="todo-description">Deskripsi</label>
+            <i class="fa-solid fa-align-left"></i>
+          </div>
+          <button id="submit">Tambah</button>
+        </div>
+        <div class="filter-wrapper">
+          <div class="input-group">
+            <input type="text" id="filter-keyword" placeholder=" ">
+            <label for="filter-keyword">Filter berdasarkan kata kunci</label>
+          </div>
+          <div class="input-group">
+            <input type="text" id="filter-date" placeholder="dd/mm/yyyy">
+            <input type="date" id="filter-hidden-date" style="display: none;">
+            <label for="filter-date">Filter berdasarkan tanggal</label>
+            <i class="fa-solid fa-calendar-days"></i>
+          </div>
+          <div class="input-group">
+            <select id="filter-priority">
+              <option value="">Semua Prioritas</option>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+            <label for="filter-priority">Filter berdasarkan prioritas</label>
+            <i class="fa-solid fa-filter"></i>
+          </div>
+          <button id="clear-filters">Hapus Filter</button>
+        </div>
+        <div class="todo-lists">
+          <!-- <div class="todo-item">
+            <div>
+              <input type="text" class="text" readonly="readonly">
+            </div>
+            <div class="action-items">
+              <i class="fa-solid fa-check"></i>
+              <i class="fa-solid fa-pen-to-square edit"></i>
+              <i class="fa-solid fa-trash"></i>
+            </div>
+          </div> -->
+        </div>
+        <div class="clear-all-container" style="display: none;">
+          <button id="clear-all" type="button">Hapus Semua Tugas</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer style="text-align: center; padding: 20px; color: #666; font-size: 14px; background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(240, 248, 255, 0.6)); border-radius: 8px; margin: 20px auto; max-width: 400px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);">
+    Created design by Rifaldi Wanda Januar
+  </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>

@@ -1,7 +1,11 @@
-<h1 align="center"> To-Do-List-JavaScript </h1>
+<h1 align="center"> Coding Camp Activity - To-Do List </h1>
 
 
 ![chrome-capture-2023-1-26 (1)](https://user-images.githubusercontent.com/77020164/221394835-eb92ac02-53e3-42bf-96ac-b5114eb543a6.gif)
+
+## Live Demo
+
+Check out the live demo of the To-Do List application: [Live Demo](https://rifaldiwj.github.io/CodingCamp-02Feb26-RifaldiWandaJanuar/)
 
 ## About The Project
 
@@ -24,8 +28,8 @@ To get a local copy up and running follow these simple example steps.
 ### Installation
 
 To run this application locally, you need to clone this repository to your local machine. You can do this by running the following command in your terminal:
-1. Clone the repo `https://github.com/CodeStudio-Content/To-Do-List-JavaScript.git` 
-2. `cd To-Do-List-JavaScript`
+1. Clone the repo `https://github.com/rifaldiwj/CodingCamp-02Feb26-RifaldiWandaJanuar.git`
+2. `cd CodingCamp-02Feb26-RifaldiWandaJanuar`
 
 
 ## Usage

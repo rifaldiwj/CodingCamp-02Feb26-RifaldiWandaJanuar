@@ -10,14 +10,17 @@ Jelajahi aplikasi **Activitas App** langsung secara online di sini:
 
 Berikut beberapa tangkapan layar yang menampilkan fitur-fitur utama dari aplikasi:
 
-![Antarmuka Utama](images/main-interface.png)  
+![Antarmuka Utama](images/add-task.png)  
 *Halaman utama aplikasi dengan daftar aktivitas harian.*
 
-![Menambahkan Aktivitas](images/add-task.png)  
+![Aktivitas Selesai](images/completed-tasks.png)  
+*Menandai validasi setiap kolom wajib di isi.*
+
+![Menambahkan Aktivitas](images/riwayat.png)  
 *Menambahkan aktivitas baru ke dalam daftar dengan mudah.*
 
-![Aktivitas Selesai](images/completed-tasks.png)  
-*Menandai aktivitas yang telah selesai secara cepat.*
+![Hapus Semua Aktivitas](images/hapus.png)  
+*Hapus semua jenis tugas/aktivitas.*
 
 ---
 

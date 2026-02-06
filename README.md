@@ -1,67 +1,43 @@
-<h1 align="center"> Coding Camp Activity - To-Do List </h1>
-
-
-![chrome-capture-2023-1-26 (1)](https://user-images.githubusercontent.com/77020164/221394835-eb92ac02-53e3-42bf-96ac-b5114eb543a6.gif)
+# Coding Camp Activity - Activitas App
 
 ## Live Demo
+Jelajahi aplikasi **Activitas App** langsung secara online di sini:  
+[🌐 Live Demo](https://rifaldiwj.github.io/CodingCamp-02Feb26-RifaldiWandaJanuar/)
 
-Check out the live demo of the To-Do List application: [Live Demo](https://rifaldiwj.github.io/CodingCamp-02Feb26-RifaldiWandaJanuar/)
+---
 
-## About The Project
+## Screenshots
 
-The To-Do List project is a simple web application that allows users to create and manage a list of tasks they need to complete. With a clean and intuitive interface, users can quickly add, edit, and delete tasks, as well as mark tasks as complete.
-This project is built with JavaScript and is a great example of a basic web application using DOM manipulation and event listeners.
+Berikut beberapa tangkapan layar yang menampilkan fitur-fitur utama dari aplikasi:
 
+![Antarmuka Utama](images/main-interface.png)  
+*Halaman utama aplikasi dengan daftar aktivitas harian.*
 
-## Blog
+![Menambahkan Aktivitas](images/add-task.png)  
+*Menambahkan aktivitas baru ke dalam daftar dengan mudah.*
 
-Check out our project blog post for more information on the development process and our thoughts on the To Do List project:
+![Aktivitas Selesai](images/completed-tasks.png)  
+*Menandai aktivitas yang telah selesai secara cepat.*
 
-* [To Do List Using JS](https://www.codingninjas.com/codestudio/library/building-a-todo-list-using-javascript?utm_source=github&utm_medium=organic&utm_campaign=blog-building-a-todo-list-using-javascript)
+---
 
+## Tentang Proyek
+**Activitas App** adalah aplikasi web interaktif yang membantu pengguna **membuat, mengelola, dan menyaring aktivitas harian** dengan mudah. Dengan antarmuka yang **bersih, intuitif, dan responsif**, pengguna dapat melakukan hal-hal berikut dengan cepat:  
 
+- 📝 Menambahkan aktivitas baru  
+- ✏️ Mengedit aktivitas yang sudah ada  
+- ❌ Menghapus aktivitas yang tidak diperlukan  
+- 🔍 Mencari aktivitas tertentu menggunakan fitur filter  
 
-## Getting Started
+Aplikasi ini dibangun menggunakan **HTML, CSS, dan JavaScript**, memanfaatkan **manipulasi DOM** dan **event listener** untuk memberikan pengalaman interaktif yang mulus.
 
-To get a local copy up and running follow these simple example steps.
+---
 
-### Installation
+## Memulai
+Untuk menjalankan aplikasi ini di komputer lokalmu, ikuti langkah-langkah berikut:
 
-To run this application locally, you need to clone this repository to your local machine. You can do this by running the following command in your terminal:
-1. Clone the repo `https://github.com/rifaldiwj/CodingCamp-02Feb26-RifaldiWandaJanuar.git`
-2. `cd CodingCamp-02Feb26-RifaldiWandaJanuar`
-
-
-## Usage
-
-- Open the index.html file in your browser
-
-### 1. Adding a task
-To add a task to the to-do list, simply enter the task description in the input field at the top of the page and press the "Add" button. The task will be added to the list.
-
-### 2. Updating a task
-To update a task, click on the task you want to update. This will open a modal window where you can edit the task description. Once you have made your changes, click the "Save" button to update the task.
-
-### 3. Completing a task
-To mark a task as complete, simply click the checkbox next to the task description. The task will be crossed out to indicate that it has been completed.
-
-### 4. Deleting a task
-To delete a task, click the "Delete" button next to the task you want to delete. This will remove the task from the to-do list.
-
-
-## Requirements
-
-- HTML
-- CSS
-- Javascript
-
-
-## Files
-
-* `index.html` :
-     This is the main file that contains the html code for the To-Do List.
-* `style.css` :
-     This file contains the styling for the To-Do List.
-* `script.js` :
-     This file contains the logic for the To-Do List, including adding, editing, and deleting tasks, and filtering the task list.
-
+### Instalasi
+1. Clone repositori ini ke komputer lokal:
+```bash
+git clone https://github.com/rifaldiwj/CodingCamp-02Feb26-RifaldiWandaJanuar.git
+cd CodingCamp-02Feb26-RifaldiWandaJanuar
